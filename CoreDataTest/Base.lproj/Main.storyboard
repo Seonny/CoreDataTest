@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,121 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreDataTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuH-B9-Pt9">
+                                <rect key="frame" x="-1" y="66" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276785714285" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save error policy"/>
+                                <connections>
+                                    <action selector="saveErrorPolicy" destination="BYZ-38-t0r" eventType="touchUpInside" id="EVI-US-WTl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcf-bQ-Q2I">
+                                <rect key="frame" x="-1" y="151" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save store trump policy"/>
+                                <connections>
+                                    <action selector="saveStoreTrumpPolicy" destination="BYZ-38-t0r" eventType="touchUpInside" id="1b6-fy-q03"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHR-7G-PNR">
+                                <rect key="frame" x="-1" y="240" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save object tump policy"/>
+                                <connections>
+                                    <action selector="saveObjectTrumpPolicy" destination="BYZ-38-t0r" eventType="touchUpInside" id="bL7-IS-cCp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgY-cg-gMu">
+                                <rect key="frame" x="194" y="66" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Save error policy no auto"/>
+                                <connections>
+                                    <action selector="saveErrorPolicyNoAuto" destination="BYZ-38-t0r" eventType="touchUpInside" id="rH1-5i-n09"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-MJ-FF3">
+                                <rect key="frame" x="194" y="151" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Save store trump policy no auto"/>
+                                <connections>
+                                    <action selector="saveStoreTrumpPolicyNoAuto" destination="BYZ-38-t0r" eventType="touchUpInside" id="abQ-5g-UyK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgH-T7-nYs">
+                                <rect key="frame" x="194" y="240" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Save object tump policy no auto"/>
+                                <connections>
+                                    <action selector="saveObjectTrumpPolicyNoAuto" destination="BYZ-38-t0r" eventType="touchUpInside" id="aKq-Ji-O5E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-TM-QxJ">
+                                <rect key="frame" x="-1" y="329" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save error to PS"/>
+                                <connections>
+                                    <action selector="saveNewBGErrorPolicy" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdP-rD-HBG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtW-w4-fu1">
+                                <rect key="frame" x="-1" y="416" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save store trump to PS"/>
+                                <connections>
+                                    <action selector="saveNewBGStoreTrumpPolicy" destination="BYZ-38-t0r" eventType="touchUpInside" id="WCK-Ue-P2T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5C-Wi-mjS">
+                                <rect key="frame" x="-1" y="501" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save object trump to PS"/>
+                                <connections>
+                                    <action selector="saveNewBGObjectTrumpPolicy" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rx-9v-mHO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEa-7Y-WuX">
+                                <rect key="frame" x="194" y="416" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save rollback to PS"/>
+                                <connections>
+                                    <action selector="saveNewBGRollbackPolicy" destination="BYZ-38-t0r" eventType="touchUpInside" id="G2v-QV-TSK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biJ-08-IOS">
+                                <rect key="frame" x="194" y="501" width="187" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15262276790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save overriten  to PS"/>
+                                <connections>
+                                    <action selector="saveNewBGOverWrittenPolicy" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6B-1K-G8Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

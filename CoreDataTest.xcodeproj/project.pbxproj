@@ -15,6 +15,7 @@
 		D9183891213D29FF006BD216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D918388F213D29FF006BD216 /* LaunchScreen.storyboard */; };
 		D918389C213D2A00006BD216 /* CoreDataTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D918389B213D2A00006BD216 /* CoreDataTestTests.swift */; };
 		D91838A7213D2A00006BD216 /* CoreDataTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91838A6213D2A00006BD216 /* CoreDataTestUITests.swift */; };
+		D9F75075213EC05F00D554EA /* CoreDataTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F75074213EC05F00D554EA /* CoreDataTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D91838A2213D2A00006BD216 /* CoreDataTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91838A6213D2A00006BD216 /* CoreDataTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestUITests.swift; sourceTree = "<group>"; };
 		D91838A8213D2A00006BD216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F75074213EC05F00D554EA /* CoreDataTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D9183883213D29FE006BD216 /* AppDelegate.swift */,
+				D9F75074213EC05F00D554EA /* CoreDataTester.swift */,
 				D9183885213D29FE006BD216 /* ViewController.swift */,
 				D9183887213D29FE006BD216 /* Main.storyboard */,
 				D918388D213D29FF006BD216 /* Assets.xcassets */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9183886213D29FE006BD216 /* ViewController.swift in Sources */,
+				D9F75075213EC05F00D554EA /* CoreDataTester.swift in Sources */,
 				D918388C213D29FE006BD216 /* CoreDataTest.xcdatamodeld in Sources */,
 				D9183884213D29FE006BD216 /* AppDelegate.swift in Sources */,
 			);
@@ -437,11 +441,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XLND8F6BR9;
 				INFOPLIST_FILE = CoreDataTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.CoreDataTest;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MergingData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,11 +460,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XLND8F6BR9;
 				INFOPLIST_FILE = CoreDataTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.CoreDataTest;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MergingData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

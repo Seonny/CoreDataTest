@@ -89,5 +89,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    private var backgroundContext: NSManagedObjectContext {
+        let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        return context
+    }
+
+    var backgroundContextErrorPolicy: NSManagedObjectContext {
+        let context = backgroundContext
+        context.mergePolicy = NSErrorMergePolicy
+        return context
+    }
+
+    var backgroundContextStoreTrumpPolicy: NSManagedObjectContext {
+        let context = backgroundContext
+        context.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
+        return context
+    }
+
+    var backgroundContextObjectTrumpPolicy: NSManagedObjectContext {
+        let context = backgroundContext        
+        context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        return context
+    }    
 }
 
